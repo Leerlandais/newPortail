@@ -9,5 +9,8 @@ try {
 }
 
 if (isset($db)) {
-    echo "Tout va bien, db est connecté --- efface ce message dans dbConnectControl.php";
+    echo "LEAVE TO DO NOTES HERE<br>" ;
+    echo "Connected to blank_db. MAKE NEW ONE FOR LOGIN AND FOR PORTAL HOLDERS";
+    echo "add sanitisation model";
+    echo "add Bootstrap CDNs";
 }
