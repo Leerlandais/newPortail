@@ -17,6 +17,8 @@ if (isset($_POST["nameInp"], $_POST["passInp"])) {
 }
 }
 
+$getPortals = getAllVisiblePortals ($db);
+
 $title = "Welcome to my new Portfolio";
 include("../view/homeView.php");
 die();
