@@ -10,6 +10,7 @@ require_once("../model/loginModel.php");
 
 if (isset($_SESSION["id"]) && ($_SESSION["id"]) === session_id()) {
     echo "You're in";
+    require_once("../model/portalModel.php");
     require_once("../control/privateControl.php");
 }else {
     require_once("../control/publicControl.php");

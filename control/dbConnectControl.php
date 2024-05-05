@@ -7,10 +7,3 @@ try {
 } catch (Exception) {
     die($errorMessage = "Problem connecting to the DB");
 }
-
-if (isset($db) && isset($_SESSION["id"])) {
-    echo "LEAVE TO DO NOTES HERE<br>" ;
-    echo "Connected to blank_db. MAKE NEW ONE FOR LOGIN AND FOR PORTAL HOLDERS";
-    echo "add sanitisation model";
-    echo "add Bootstrap CDNs";
-}

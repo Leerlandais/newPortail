@@ -1,7 +1,7 @@
 <?php
 
 function userLogin(PDO $db, string $name, string $pass) : bool | string {
-    var_dump($name, $pass);
+
     
     $sql = "SELECT *
             FROM `users`

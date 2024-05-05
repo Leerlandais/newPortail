@@ -11,12 +11,14 @@
     <div class="container"> <!-- CONTAINER GLOBAL POUR ENGLOBÉ LE TOTALE -->
     <?php
         // INCLURE SI NECESSAIRE (BON ENDROIT POUR LE NAVBAR PAR EXEMPLE)
-        include("inc/header.php");
+        include("../view/inc/header.php");
     ?>
     
-    <div class="container">
-            <h2>THIS IS THE PRIVATE PAGE</h2>
-        Voir le page <a href="?page=x">404</a>
+    <div class="container w-50 d-flex flex-column justify-content-around text-center">
+            <?php
+                include("inc/add-form.php");
+            ?>
+         <a href="?logout">Leave</a>
             <!-- CONTAINER POUR LE CONTENU PRINCIPAL -->
 
 
@@ -24,7 +26,7 @@
 
     <?php
         // INCLURE SI NECESSAIRE
-        include("inc/footer.php");
+        include("../view/inc/footer.php");
     ?>
     </div>
     <?php require_once("../view/inc/jsBS.php"); ?>
