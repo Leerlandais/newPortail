@@ -28,6 +28,6 @@ session_destroy();
 
 // redirection vers l'accueil (attention: utilise les bons liens (?p, ?page, ?section))
   
-header("Location: ?page=home");
+header("Location: ./");
 exit();
 ?>

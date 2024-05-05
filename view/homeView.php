@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?=$title?></title>
+    
     <link rel="stylesheet" href="styles/style.css">
     
 </head>
 <body>
 <?php
 include("../view/inc/header.php");
-
+if (!isset($_SESSION["id"]) || $_SESSION["id"] !== session_id()) {
 ?>
-
+<a href="?login">Login</a>
+<?php
+}else {
+    ?>
+<a href="?logout">Disconnect</a>
+<?php
+}
+if (isset($_GET["login"])) {
+    include("inc/login-form.php");
+}
+?>
 <fieldset>
     <legend>Choisissez votre Passage</a></legend>
     <div class="portalHolder">
@@ -59,6 +70,7 @@ include("../view/inc/header.php");
     </div>
 </fieldset>       
     
+
 <script src="scripts/script.js"></script>
 </body>
 </html>
